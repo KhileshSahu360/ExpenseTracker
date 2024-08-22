@@ -1,6 +1,5 @@
 import BudgetCard from '@/components/BudgetCard';
 import { CreateBudget } from '@/components/CreateBudget'
-import useGetBudget from '@/hooks/getBudget'
 import React, { useEffect, useState } from 'react'
 import { useSelector, useDispatch } from "react-redux";
 import { budgetAction, getBudget } from '@/Store/Store';

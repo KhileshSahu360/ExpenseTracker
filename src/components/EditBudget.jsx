@@ -87,7 +87,9 @@ export function EditBudget({budgetData, getSelectedBudget}) {
                 ></Toaster>
             </div>
       <DialogTrigger asChild>
-            <label htmlFor="" className="bg-primary px-4 py-2 flex gap-1 rounded-md font-medium cursor-pointer text-white items-center"><FaEdit fontSize={'1.2rem'}/>Edit</label>
+            <Button>
+              <label htmlFor="" className="bg-primary px-4 py-2 flex gap-1 rounded-md font-medium cursor-pointer text-white items-center"><FaEdit fontSize={'1.2rem'}/>Edit</label>
+            </Button>
       </DialogTrigger>
       <DialogContent className="md:max-w-[60%] max-w-[90%] lg:max-w-[40%]">
         <form action="" onSubmit={updateBudget}>

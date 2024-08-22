@@ -64,7 +64,7 @@ const Dashboard = () => {
       <div className='grid md:grid-cols-2 grid-cols-1 lg:grid-cols-3 gap-3 mt-5'>
         <DashBoardCard title={'Total Budget'} value={totalBudget} icon={<LuPiggyBank/>}/>
         <DashBoardCard title={'Total Spend'} value={totalSpend} icon={<SiExpensify/>}/>
-        <DashBoardCard title={'No. of Budget\'s'} value={NoOfBudget} icon={<LuWallet/>}/>
+        <DashBoardCard title={'No. of Budget\'s'} value={NoOfBudget} number={true} icon={<LuWallet/>}/>
       </div>
 
       <div className='grid grid-cols-7 lg:grid-cols-10 mt-5 gap-3'>
@@ -116,7 +116,7 @@ const DashBoardCard = (props) => {
     <div className='flex justify-between items-center px-6 py-6 border rounded-lg shadow-md'>
     <div className='flex flex-col'>
       <label htmlFor="" className='font-normal text-[.9rem]'>{props.title}</label>
-      <label htmlFor="" className='-mt-1 font-extrabold text-[1.4rem]'>{props.value}₹</label>
+      <label htmlFor="" className='-mt-1 font-extrabold text-[1.4rem]'>{props.value}{!props.number?'₹':''}</label>
     </div>
     <label htmlFor="" className='flex justify-center items-center size-10 bg-primary rounded-full text-white'>{props.icon}</label>
   </div>

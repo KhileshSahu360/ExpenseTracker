@@ -95,7 +95,7 @@ const MangageBudget = () => {
             Manage Budget's
           </label>
         </div>
-        <div className="flex gap-3">
+        <div className="flex gap-3 items-center">
           {selectedBudget && <EditBudget getSelectedBudget={getSelectedBudget} budgetData={selectedBudget}/>}
           {selectedBudget?._id && <DeleteBudget budgetId={budgetId}/>}
         </div>

@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import { Button } from './ui/button';
 
 const Hero = () => {
-  console.log('hero');
   return (
     <section className="bg-gray-50 flex flex-col items-center">
   <div className="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:h-screen lg:items-center">

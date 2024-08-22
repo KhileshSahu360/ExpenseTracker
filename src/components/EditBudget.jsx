@@ -61,7 +61,6 @@ export function EditBudget({budgetData, getSelectedBudget}) {
       }
       setLoading(true);
       const response  = await axios.put(`${backendUrl}/api/budget/updatebudget/${budgetData._id}`, data);
-      console.log(response.status)
       if(response.status===200){
         setBudgetAmount('')
         setBudgetName('')

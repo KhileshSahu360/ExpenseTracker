@@ -55,7 +55,6 @@ export function CreateBudget() {
       }
       setLoading(true);
       const response  = await axios.post(`${backendUrl}/api/budget/createbudget`, data);
-      console.log(response.status)
       if(response.status===200){
         toast.success('Budget created!')
         setBudgetAmount('')

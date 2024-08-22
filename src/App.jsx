@@ -10,7 +10,6 @@ import Home from './pages/Home'
 import { Toaster } from 'react-hot-toast'
 
 function App() {
-  console.log('app')
   return (
     <>
       <Header/>

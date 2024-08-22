@@ -1,0 +1,17 @@
+@media screen and (max-width:430px) {
+    .manage_budget_text{
+        font-size: 1.4rem !important;
+    }
+    
+}
+
+tr, td {
+    border: 1px solid rgb(206, 199, 199);
+    border-radius: 10px !important;
+}
+th, td{
+    padding: 10px !important;
+}
+table {
+    border-collapse: collapse;
+}

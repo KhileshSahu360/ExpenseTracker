@@ -127,9 +127,7 @@ export function EditBudget({budgetData, getSelectedBudget}) {
           </div>
         </div>
         <DialogFooter className={'grid grid-cols-1'}>
-          <DialogClose asChild>
             <Button disabled={(budgetName?.length==0  || budgetAmount?.length==0) || (budgetData.budgetName===budgetName && budgetData.budgetAmount===budgetAmount && budgetData.icon===emoji) }onKeyDown={handleKeyDown} type="submit" className="col-span-1 py-5">{loading?<Loader/>:'Update Budget'}</Button>
-          </DialogClose>
         </DialogFooter>
         </form>
       </DialogContent>

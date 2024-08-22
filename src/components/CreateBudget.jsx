@@ -125,9 +125,7 @@ export function CreateBudget() {
           </div>
         </div>
         <DialogFooter className={'grid grid-cols-1'}>
-          <DialogClose asChild>
             <Button disabled={budgetName.length==0  || budgetAmount.length==0} onKeyDown={handleKeyDown} type="submit" className="py-5 w-full">{loading?<Loader/>:'Create Budget'}</Button>
-          </DialogClose>
         </DialogFooter>
         </form>
       </DialogContent>
